@@ -44,7 +44,9 @@ class RamadanCalenderView extends GetView<RamadanCalenderController> {
                       fontFamily: 'Cairo',
                       color: AllColors.greyColor,
                       fontSize: 14.0
-                  ))),
+                  )
+                  )
+              ),
               Expanded(
                   flex: 3,
                   child: Padding(

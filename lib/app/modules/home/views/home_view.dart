@@ -144,7 +144,6 @@ class HomeView extends GetView<HomeController> {
                                       fontWeight: FontWeight.normal
                                   )),
 
-
                                 ]
                               ),
                             ),
@@ -189,8 +188,6 @@ class HomeView extends GetView<HomeController> {
                                             fontSize: 15.0,
                                             fontWeight: FontWeight.normal
                                         )),
-
-
                                   ]
                               ),
                             )
@@ -200,8 +197,96 @@ class HomeView extends GetView<HomeController> {
                       Divider(
                           color: AllColors.greyColor.withOpacity(0.3)
                       ),
+                      SizedBox(
+                        height: 160.0,
+                        child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height:65.0,
+                                        width: 65.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(50.0),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              AllColors.secondaryColor,
+                                              AllColors.primaryColor,
+                                            ],
+                                          ),
+                                        ),
+                                        child: SvgPicture.asset('assets/images/salat_tracker.svg'),
+                                      ),
 
+                                      Text('Salat Tracker',style: AllStyles.headingTextStyle.copyWith(
+                                          color: AllColors.blackColor,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.normal
+                                      )),
 
+                                      Text('Stay consistent in your prayers',
+                                          textAlign: TextAlign.center,
+                                          style: AllStyles.titleTextStyle.copyWith(
+                                              color: AllColors.blackColor.withOpacity(0.6),
+                                              fontSize: 15.0,
+                                              fontWeight: FontWeight.normal
+                                          )),
+
+                                    ]
+                                ),
+                              ),
+                              Container(
+                                height: double.infinity, // Thickness of the divider
+                                color: AllColors.greyColor.withOpacity(0.3),
+                                width: 1.0,// Color of the divider// Full width
+                                margin: EdgeInsets.symmetric(vertical: 10), // Add spacing
+                              ),
+                              Expanded(
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height:65.0,
+                                        width: 65.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(50.0),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              AllColors.secondaryColor,
+                                              AllColors.primaryColor,
+                                            ],
+                                          ),
+                                        ),
+                                        child: SvgPicture.asset('assets/images/salat_tracker.svg'),
+                                      ),
+
+                                      Text('Salat Tracker',style: AllStyles.headingTextStyle.copyWith(
+                                          color: AllColors.blackColor,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.normal
+                                      )),
+
+                                      Text('Stay consistent in your prayers',
+                                          textAlign: TextAlign.center,
+                                          style: AllStyles.titleTextStyle.copyWith(
+                                              color: AllColors.blackColor.withOpacity(0.6),
+                                              fontSize: 15.0,
+                                              fontWeight: FontWeight.normal
+                                          )),
+                                    ]
+                                ),
+                              )
+                            ]
+                        ),
+                      ),
                     ]
                   ),
                 ),
